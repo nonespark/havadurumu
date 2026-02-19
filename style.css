@@ -29,7 +29,7 @@ body{
     width: 100%;
     display: flex;
     align-items: center;
-    justify-content: space-between;
+    gap:12px;
 }
 
 .search input{
@@ -37,12 +37,12 @@ body{
     outline: 0;
     background: #ebfffc;
     color: #555;
-    padding: 10px 25px;
+    padding: 0 25px;
     height: 60px;
     border-radius: 30px;
     flex: 1;
-    margin-right: 16px;
     font-size: 18px;
+    min-width: 0;
 }
 
 .search button {
@@ -53,10 +53,13 @@ body{
     width: 60px;
     height: 60px;
     cursor: pointer;
+    flex-shrink: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 .search button img{
-    margin-top: 5px;
     width: 24px;
 }
 
