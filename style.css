@@ -2,6 +2,12 @@
     font-family: 'Poppins';
     src: url(fonts/Poppins.ttf);
 }
+@font-face {
+    font-family: 'Ramsina';
+    src: url(fonts/Ramsina.ttf);
+}
+
+
 * {
     margin: 0;
     padding: 0;
@@ -84,14 +90,16 @@ body{
     display: flex;
     align-items: center;
     justify-content: space-between;
-    padding: 0 20px;
+    padding: 0;
     margin-top:50px;
+    width: 100%;
 }
 
 .col{
     display: flex;
     align-items: center;
     text-align: left;
+    flex: 1;
 }
 
 .col img{
@@ -99,8 +107,12 @@ body{
     margin-right: 12px;
 }
 
+.col:last-child{
+    justify-content: flex-end;
+}
+
 .humidity, .wind {
-    font-size: 24px;
+    font-size: 22px;
     margin-top: -6px;
 }
 
@@ -115,4 +127,26 @@ body{
     font-size: 15px;
     margin-top: 12px;
     display: none;
+}
+
+.createdby{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    margin-bottom: 25px;
+    width: 100%;
+}
+
+.createdby img {
+    width: 34px;
+    height: auto;
+}
+
+.createdby p {
+    font-family: 'Ramsina', sans-serif !important;
+    font-size: 26px;
+    color: #ebfffc;
+    margin: 0;
+    line-height: 1;
 }
